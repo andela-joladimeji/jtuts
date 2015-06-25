@@ -16,4 +16,11 @@ public class StringUtilTest {
 		assertEquals("kmj", StringUtil.reverseAndMute("jumoke"));
 		assertEquals("sr", StringUtil.reverseAndMute("Iris"));
 	}
+	
+	@Test
+	public void testSplitAndSnake(){
+		assertEquals("", StringUtil.splitAndSnake("", "-"));
+		assertEquals("JAN.feb.MAR", StringUtil.splitAndSnake("jan-feb-mar", "-"));
+		assertEquals("JAN.feb.MAR", StringUtil.splitAndSnake("jan-FEB-mar", "-"));
+	}
 }
