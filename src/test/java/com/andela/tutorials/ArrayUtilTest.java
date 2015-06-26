@@ -30,5 +30,6 @@ public class ArrayUtilTest {
 		set.add(2);
 		assertEquals(new Integer(12), ArrayUtil.sumFirstAndLast(set));
 	}
-
+	
+	
 }
