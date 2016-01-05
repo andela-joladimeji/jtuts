@@ -33,6 +33,11 @@ public class FileUtil {
 		System.out.println("The file size is "+createdFile.length());
 
 	}
+	/*
+	 * public void close() throws IOException{}
+	 method closes the file output stream. Releases 
+	 any system resources associated with the file. Throws an IOException
+	 * */
 	
 	public static void createTempFile() throws IOException{
 		File temp = File.createTempFile("config-net", ".log");
